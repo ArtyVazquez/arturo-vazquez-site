@@ -1,7 +1,6 @@
 import { useState, createContext, useMemo, useContext, useEffect } from 'react';
 import ResponsiveDrawer from '../Components/NavbarDrawer/ResponsiveDrawer'
 import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
 import { useTheme, ThemeProvider, createTheme } from '@mui/material/styles';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
@@ -24,11 +23,11 @@ function ThemeMode() {
 
 function MyApp({ Component, pageProps }) {
   const [cookies, setCookie] = useCookies(['theme']); // save theme mode in cookie
-  const [mode, setMode] = useState('light'); // light mode by default
+  const [mode, setMode] = useState('dark'); // light mode by default
   const colorMode = useMemo(
     () => ({
-      toggleColorMode: (isToogle) => {
-        if (isToogle){
+      toggleColorMode: (isToggle) => {
+        if (isToggle){
           setCookie('theme', cookies.theme === 'light'? 'dark':'light');
           setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
         } else {
@@ -52,7 +51,7 @@ function MyApp({ Component, pageProps }) {
   // set the theme to be whats in the theme cookie
   useEffect(() => {
     if (cookies.theme === undefined)
-      setCookie('theme', 'light', {path: '/'});
+      setCookie('theme', 'dark', {path: '/'});
 
     colorMode.toggleColorMode(false);
   },[]);
@@ -65,12 +64,9 @@ function MyApp({ Component, pageProps }) {
             sx={{ 
               display: 'flex',
               flexDirection: 'row',
-              heigth: '100vh',
               overflowX: 'hidden'
              }}>
             <ResponsiveDrawer mode={<ThemeMode />}/>
-            
-            {/* make 100% of heigth... */}
             <Box
              sx={{
               bgcolor: 'background.default',
@@ -83,9 +79,7 @@ function MyApp({ Component, pageProps }) {
               }}>
               <Component {...pageProps} />
             </Box>
-
           </Box>
-
         </ThemeProvider>
       </ColorModeContext.Provider>
   )

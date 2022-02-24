@@ -7,10 +7,9 @@ import AboutIntroductionCard from "../Components/About/AboutIntroductionCard";
 
 export default function Home() {
   return (
-      <Box>
-          <Box sx={{
-              textAlign: 'center',
-              mt: 2}}>
+      <Box sx={{  my: 10,
+                  mx: 3 }}>
+          <Box sx={{ textAlign: 'center'}}>
               <Image
                   src='/Images/coding.png'
                   alt="Picture pc"

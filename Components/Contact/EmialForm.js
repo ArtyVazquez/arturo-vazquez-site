@@ -4,12 +4,9 @@ import { useState } from "react";
 export default function EmailForm() {
     const [msg, setMsg]= useState(null);
    return (
-       <Box sx={{
-           borderRadius: '1rem',
-           p: 5,
-           m: 5,
-           textAlign: 'center'
-       }}>
+       <Box sx={{ borderRadius: '1rem',
+                  textAlign: 'center',
+                  mb: 2 }}>
            <form action="https://formsubmit.co/avazquez1699@gmail.com" method="POST">
                <Box sx={{m: 4}}>
                    <OutlinedInput required
@@ -28,7 +25,8 @@ export default function EmailForm() {
                                    placeholder="Message: "
                                    multiline={true}
                                    rows='10'
-                                   sx={{display: 'flex'}}/>
+                                   sx={{ display: 'flex',
+                                        minWidth: 200 }}/>
                 </Box>
                <Button variant="contained"
                        color="secondary"

@@ -5,7 +5,8 @@ import EmailForm from "../Components/Contact/EmialForm";
 
 export default function Contact() {
   return (
-      <Box>
+      <Box sx={{ my: 10,
+                 mx: 0 }}>
         <ContactDescription />
       </Box>
 )

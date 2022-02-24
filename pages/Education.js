@@ -5,7 +5,8 @@ import TerminalDot from "../Components/Education/TerminalDot";
 
 export default function Education() {
   return (
-      <Box>
+      <Box sx={{ my: 10,
+                 mx: 0 }}>
           <EducationCard
               uni='University of Illinois at Chicago, (Aug 2019-Dec 2021)'
               imgSrc='/Images/uic.png'

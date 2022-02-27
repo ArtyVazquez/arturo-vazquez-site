@@ -1,4 +1,4 @@
-import { Box } from '@mui/material';
+import { Box, Paper } from '@mui/material';
 
 export default function AboutIntroductionCard(props) {
     return (
@@ -6,7 +6,9 @@ export default function AboutIntroductionCard(props) {
                    padding: '1rem',
                    borderRadius: '1rem',
                    lineHeight: '3.9rem',
-                   fontSize: '1.6rem' }}>
+                   fontSize: '1.6rem',
+                   mx: '2rem',
+                   my: '0'}}>
             {props.description}
         </Box>
     )

@@ -9,7 +9,7 @@ const StyledRating = styled(Rating)({
 
 export default function SkillLevelTable({skillsRow, category}) {
     return (
-        <TableContainer component={Paper}>
+        <TableContainer>
             <Table aria-label="simple table">
                 <TableHead>
                     <TableRow>

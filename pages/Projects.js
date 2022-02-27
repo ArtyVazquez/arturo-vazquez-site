@@ -1,27 +1,37 @@
 import React from 'react'
 import ProjectSection from "../Components/Projects/ProjectSection";
 import { Grid, Box } from "@mui/material";
-import SectionHeader from "../Components/Skills/SectionHeader";
-import SkillLevelTable from "../Components/Skills/SkillLevelTable";
+
 
 export default function Projects() {
+
+    function createProject(name, description, sourceCode, viewProject, img, sourceCodeLink, viewProjectLink) {
+      return {name, description, sourceCode, viewProject, img, sourceCodeLink, viewProjectLink}
+    }
+
+    const web = [
+      createProject("Crypto-Go", "React web app...", true, true, "cryptogo.png", "https://github.com/jakeraffe/CS422-GR4", "https://61a58a63754976587bb7eeea--crypto-go.netlify.app/"), 
+      createProject("Crypto Info", "NextJs web app...", true, true, "cryptogo.png", "https://github.com/jvazqu61/crypto-info", "https://crypto-info-mocha.vercel.app/"),
+      createProject("Crypto-Go", "React web app...", true, true, "cryptogo.png", "https://61a58a63754976587bb7eeea--crypto-go.netlify.app/", "https://github.com/jakeraffe/CS422-GR4"),
+      createProject("Crypto-Go", "React web app...", true, true, "cryptogo.png", "https://61a58a63754976587bb7eeea--crypto-go.netlify.app/", "https://github.com/jakeraffe/CS422-GR4")
+    ]
+
+
   return (
       <Box sx={{ flexGrow: 1,
                  my: 10,
                  mx: 3 }}>
         <Grid container spacing={15}>
-              <Grid item xs={12} md={12} lg={12}>
-                <ProjectSection sectionName="Android"
-                                imgDestination="/Images/android.png"/>
+              <Grid item lg={12}>
+                  <ProjectSection sectionName="Web"
+                                  imgDestination="/Images/webdev.png"
+                                  data={web}/>
               </Grid>
-          <Grid item xs={12} md={12} lg={12}>
-            <ProjectSection sectionName="Relational Databases"
-                            imgDestination="/Images/db.png"/>
-          </Grid>
-          <Grid item xs={12} md={12} lg={12}>
-            <ProjectSection sectionName="Web"
-                            imgDestination="/Images/webdev.png"/>
-          </Grid>
+              <Grid item lg={12}>
+                  <ProjectSection sectionName="Android"
+                                  imgDestination="/Images/android.png"
+                                  data={web}/>
+              </Grid>
         </Grid>
     </Box>
 

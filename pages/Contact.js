@@ -9,5 +9,5 @@ export default function Contact() {
                  mx: 0 }}>
         <ContactDescription />
       </Box>
-)
+    );
 }

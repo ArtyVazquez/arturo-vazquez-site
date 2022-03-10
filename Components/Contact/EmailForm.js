@@ -1,4 +1,4 @@
-import { Box, useFormControl, OutlinedInput, Button, TextareaAutosize} from '@mui/material';
+import { Box, OutlinedInput, Button } from '@mui/material';
 import { useState } from "react";
 
 export default function EmailForm() {

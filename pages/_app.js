@@ -23,13 +23,14 @@ function ThemeMode() {
 
 function MyApp({ Component, pageProps }) {
   const [cookies, setCookie] = useCookies(['theme']); // save theme mode in cookie
-  const [mode, setMode] = useState('dark'); // light mode by default
+  const [mode, setMode] = useState('dark'); // dark mode by default
   const colorMode = useMemo(
     () => ({
       toggleColorMode: (isToggle) => {
         if (isToggle){
-          setCookie('theme', cookies.theme === 'light'? 'dark':'light');
-          setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
+          console.log("is toggle!");
+          setCookie('theme', cookies.theme === 'light' ? 'dark' : 'light');
+          setMode((prevMode) => (prevMode === 'light'  ? 'dark' : 'light'));
         } else {
           setMode(cookies.theme);
         }
@@ -52,8 +53,7 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     if (cookies.theme === undefined)
       setCookie('theme', 'dark', {path: '/'});
-
-    colorMode.toggleColorMode(false);
+      colorMode.toggleColorMode(false);
   },[]);
 
   return (

@@ -1,6 +1,6 @@
 import { Box } from '@mui/material';
-import Image from "next/Image";
-import EmailForm from "./EmialForm";
+import Image from 'next/image';
+import EmailForm from "./EmailForm";
 
 export default function ContactDescription() {
     return (

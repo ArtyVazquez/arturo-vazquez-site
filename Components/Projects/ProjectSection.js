@@ -1,5 +1,5 @@
 import { Box, Paper, List, ListItem, Grid } from "@mui/material";
-import Image from "next/Image";
+import Image from "next/image";
 import ProjectCard from "./ProjectCard";
 import SectionHeader from "../Skills/SectionHeader";
 import SkillLevelTable from "../Skills/SkillLevelTable";
@@ -38,8 +38,8 @@ export default function ProjectSection(props) {
                    
                         {props.data.map((data, index) => {
                             return(
-                                <Grid item xs={12} md={6} lg={4}> 
-                                    <ListItem key={index}> 
+                                <Grid key={index} item xs={12} md={6} lg={4}> 
+                                    <ListItem > 
                                         <ProjectCard name={data.name}
                                                     description={data.description}
                                                     sourceCode={data.sourceCode}

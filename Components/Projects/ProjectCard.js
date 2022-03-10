@@ -1,6 +1,6 @@
 import { Box, Card, CardMedia, CardContent, Typography, CardActions, Button } from '@mui/material';
 import { route } from 'next/dist/server/router';
-import Image from "next/Image";
+import Image from "next/image";
 import Link from 'next/link';
 
 export default function ProjectCard(props) {

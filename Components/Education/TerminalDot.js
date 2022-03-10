@@ -1,5 +1,5 @@
 import { Box } from '@mui/material';
-import Image from 'next/Image';
+import Image from 'next/image';
 
 export default function TerminalDot() {
     return (

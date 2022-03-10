@@ -10,10 +10,10 @@ export default function Projects() {
     }
 
     const web = [
-      createProject("Crypto-Go", "React web app...", true, true, "cryptogo.png", "https://github.com/jakeraffe/CS422-GR4", "https://61a58a63754976587bb7eeea--crypto-go.netlify.app/"), 
       createProject("Crypto Info", "NextJs web app...", true, true, "cryptogo.png", "https://github.com/jvazqu61/crypto-info", "https://crypto-info-mocha.vercel.app/"),
-      createProject("Crypto-Go", "React web app...", true, true, "cryptogo.png", "https://61a58a63754976587bb7eeea--crypto-go.netlify.app/", "https://github.com/jakeraffe/CS422-GR4"),
-      createProject("Crypto-Go", "React web app...", true, true, "cryptogo.png", "https://61a58a63754976587bb7eeea--crypto-go.netlify.app/", "https://github.com/jakeraffe/CS422-GR4")
+      createProject("Crypto-Go", "React web app...", true, true, "cryptogo.png", "https://github.com/jakeraffe/CS422-GR4", "https://61a58a63754976587bb7eeea--crypto-go.netlify.app/"), 
+      createProject("Typing Speed Test", "React web app...", true, true, "cryptogo.png", "https://61a58a63754976587bb7eeea--crypto-go.netlify.app/", "https://github.com/jakeraffe/CS422-GR4"),
+      createProject("Meet Up", "React web app...", true, true, "cryptogo.png", "https://61a58a63754976587bb7eeea--crypto-go.netlify.app/", "https://github.com/jakeraffe/CS422-GR4")
     ]
 
 
@@ -29,6 +29,11 @@ export default function Projects() {
               </Grid>
               <Grid item lg={12}>
                   <ProjectSection sectionName="Android"
+                                  imgDestination="/Images/android.png"
+                                  data={web}/>
+              </Grid>
+              <Grid item lg={12}>
+                  <ProjectSection sectionName="Other"
                                   imgDestination="/Images/android.png"
                                   data={web}/>
               </Grid>

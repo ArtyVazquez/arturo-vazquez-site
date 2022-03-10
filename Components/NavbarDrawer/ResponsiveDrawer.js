@@ -25,9 +25,19 @@ import PersonIcon from '@mui/icons-material/Person';
 const drawerWidth = 200;
 
 function ResponsiveDrawer(props) {
+
+  function createListItems(name, icon) {
+    return {name, icon}
+  }
+
+
+
   const router = useRouter();
   const { window } = props;
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  const drawerItems = [createListItems('About', <PersonIcon />), createListItems('Education', <SchoolIcon />), createListItems('Skills', <WysiwygIcon />),
+  createListItems('Projects', <CodeIcon />), createListItems('Contact', <ConnectWithoutContactIcon />)];
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -37,17 +47,23 @@ function ResponsiveDrawer(props) {
     <div>
       <Toolbar />
       <List>
-        {[['About', <PersonIcon />], ['Education', <SchoolIcon />], ['Skills', <WysiwygIcon />],
-          ['Projects', <CodeIcon />],['Contact', <ConnectWithoutContactIcon />]].map((item) => (
-            
-            <ListItem button key={item[0]} onClick={() => router.push(item[0] !== 'About' ? `/${item[0]}`: `/`)}>
-            <ListItemIcon>
-                {item[1]}
-            </ListItemIcon>
-            <ListItemText primary={item[0]} />
-          </ListItem>
-          ))}
-        <ListItem sx={{display: 'felx', justifyContent: 'center'}}>
+        {drawerItems.map((item, index) => {
+                return (
+                    <ListItem key={index} button onClick={() => {
+                      router.push(item.name !== 'About' ? `/${item.name}`: `/`);
+                      setMobileOpen(false);
+                      }}>
+                      <ListItemIcon>
+                          {item.icon}
+                      </ListItemIcon>
+                      <ListItemText primary={item.name} />
+                    </ListItem>
+                )
+              }
+          )
+        }
+
+        <ListItem sx={{display: 'flex', justifyContent: 'center'}}>
             {props.mode}
         </ListItem>
 

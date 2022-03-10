@@ -4,6 +4,7 @@ import { Typography, Box} from '@mui/material'
 import { positions } from '@mui/system';
 import Image from 'next/image'
 import AboutIntroductionCard from "../Components/About/AboutIntroductionCard";
+import Footer from '../Components/General/Footer';
 
 export default function Home() {
   return (
@@ -45,6 +46,7 @@ export default function Home() {
                   width={60}
                   objectFit="responsive" />
           </Box>
+          <Footer />
       </Box>
   )
 }

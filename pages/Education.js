@@ -1,7 +1,7 @@
-import { Typography, Box, List, ListItem, Container} from '@mui/material';
+import { Box } from '@mui/material';
 import EducationCard from "../Components/Education/EducationCard";
-import Image from "next/image";
 import TerminalDot from "../Components/Education/TerminalDot";
+import Footer from '../Components/General/Footer';
 
 export default function Education() {
   return (
@@ -29,6 +29,7 @@ export default function Education() {
               major='Associates in General Studies'
               eduHighlights={["GPA: 3.52", "Star Scholarship"]}
           />
+        <Footer />
       </Box>
   )
 }

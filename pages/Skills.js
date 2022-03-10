@@ -1,4 +1,5 @@
 import { Box, Grid, Item } from '@mui/material';
+import Footer from '../Components/General/Footer';
 import SectionHeader from "../Components/Skills/SectionHeader";
 import SkillLevelTable from "../Components/Skills/SkillLevelTable";
 
@@ -60,6 +61,7 @@ export default function Skills() {
                   <SkillLevelTable skillsRow={otherNskill} category='Other'/>
               </Grid>
           </Grid>
+          <Footer />
       </Box>
   )
 }

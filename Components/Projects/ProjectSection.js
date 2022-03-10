@@ -1,8 +1,6 @@
-import { Box, Paper, List, ListItem, Grid } from "@mui/material";
+import { Box, ListItem, Grid } from "@mui/material";
 import Image from "next/image";
 import ProjectCard from "./ProjectCard";
-import SectionHeader from "../Skills/SectionHeader";
-import SkillLevelTable from "../Skills/SkillLevelTable";
 
 export default function ProjectSection(props) {
     return (

@@ -1,7 +1,8 @@
-import { Box, Grid, Item } from '@mui/material';
+import { Box, Grid } from '@mui/material';
 import Footer from '../Components/General/Footer';
 import SectionHeader from "../Components/Skills/SectionHeader";
 import SkillLevelTable from "../Components/Skills/SkillLevelTable";
+import Head from 'next/head';
 
 export default function Skills() {
     function createData(name, skillLevel) {
@@ -47,6 +48,10 @@ export default function Skills() {
       <Box sx={{ flexGrow: 1,
                  my: 10,
                  mx: 3 }}>
+          <Head>
+            <title>Skills</title>
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          </Head>  
           <Grid container spacing={15}>
               <Grid item xs={12} md={12} lg={4}>
                   <SectionHeader header='Technologies'/>

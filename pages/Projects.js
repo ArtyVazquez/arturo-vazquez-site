@@ -2,6 +2,7 @@ import React from 'react'
 import ProjectSection from "../Components/Projects/ProjectSection";
 import { Grid, Box } from "@mui/material";
 import Footer from '../Components/General/Footer';
+import Head from 'next/head';
 
 
 export default function Projects() {
@@ -35,6 +36,10 @@ export default function Projects() {
       <Box sx={{ flexGrow: 1,
                  my: 10,
                  mx: 3 }}>
+        <Head>
+          <title>Projects</title>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>  
         <Grid container spacing={15}>
               <Grid item lg={12}>
                   <ProjectSection sectionName="Web"

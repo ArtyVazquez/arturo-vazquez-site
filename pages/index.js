@@ -1,7 +1,5 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import { Typography, Box} from '@mui/material'
-import { positions } from '@mui/system';
+import { Box } from '@mui/material'
 import Image from 'next/image'
 import AboutIntroductionCard from "../Components/About/AboutIntroductionCard";
 import Footer from '../Components/General/Footer';
@@ -10,6 +8,11 @@ export default function Home() {
   return (
       <Box sx={{  my: 10,
                   mx: 3 }}>
+          <Head>
+            <title>About</title>
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          </Head>  
+
           <Box sx={{ textAlign: 'center'}}>
               <Image
                   src='/Images/coding.png'

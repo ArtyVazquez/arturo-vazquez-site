@@ -8,7 +8,7 @@ export default function EducationCard(props) {
             padding: '1rem',
             borderRadius: '1rem',
             mx: '3rem',
-            my: '0'
+            my: '5rem'
         }}>
             <Box component="h1" sx={{ display: 'inline' }}>
                 {props.uni}

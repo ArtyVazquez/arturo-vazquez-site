@@ -38,17 +38,7 @@ export default function Home() {
             working in teams that I have applied to future projects. I also really enjoy learning
             new things, as of now I have really been enjoying learning about full stack web development.
             "/>
-          <Box sx={{
-            textAlign: 'center',
-            m: 3
-          }}>
-              <Image
-                  src='/Images/terminal.png'
-                  alt="Picture terminal symbol"
-                  height={60}
-                  width={60}
-                  objectFit="responsive" />
-          </Box>
+         
           <Footer />
       </Box>
   )

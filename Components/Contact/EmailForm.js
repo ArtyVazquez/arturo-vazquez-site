@@ -6,7 +6,7 @@ export default function EmailForm() {
    return (
        <Box sx={{ borderRadius: '1rem',
                   textAlign: 'center',
-                  mb: 2 }}>
+                  mb: 5 }}>
            <form action="https://formsubmit.co/avazquez1699@gmail.com" method="POST">
                <Box sx={{m: 4}}>
                    <OutlinedInput required

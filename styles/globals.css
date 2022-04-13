@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&family=Paytone+One&family=Rubik+Bubbles&family=Source+Code+Pro:wght@500&display=swap');
+
 html,
 body {
   margin:0;
@@ -5,7 +7,7 @@ body {
   height:100vh;
   width: 100vw;
   position: absolute;
-  font-family: "Optima", sans-serif	;
+  font-family: 'Source Code Pro', monospace;
 }
 
 a {

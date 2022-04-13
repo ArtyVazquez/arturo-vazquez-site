@@ -1,6 +1,5 @@
 import { Box } from '@mui/material';
 import EducationCard from "../Components/Education/EducationCard";
-import TerminalDot from "../Components/Education/TerminalDot";
 import Footer from '../Components/General/Footer';
 import Head from 'next/head';
 
@@ -21,12 +20,6 @@ export default function Education() {
         <Box sx={{
             textAlign: 'center',
             my: 3}}>
-            <TerminalDot />
-            <TerminalDot />
-            <TerminalDot />
-            <TerminalDot />
-            <TerminalDot />
-            <TerminalDot />
         </Box>
           <EducationCard
               uni='Wilbur Wright College, Chicago, IL, (Aug 2017-May 2019)'

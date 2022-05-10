@@ -9,7 +9,9 @@ export default function ContactDescription() {
             p: 5,
             textAlign: 'center',
             boxShadow: 10,
-            m: 5
+            m: 5,
+            bgcolor: '#5FA',
+            color: 'black'
         }}>
             <Box component="h1"> Get In Touch </Box>
             <Box component="h2"> If you find my skills appealing. </Box>

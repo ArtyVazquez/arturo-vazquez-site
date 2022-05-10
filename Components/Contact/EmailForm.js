@@ -11,13 +11,21 @@ export default function EmailForm() {
                <Box sx={{m: 4}}>
                    <OutlinedInput required
                                   placeholder="Name: "
-                                  name="name"/>
+                                  name="name"
+                                  sx={{
+                                    bgcolor: 'background.default',
+                                    color: 'text.primary'
+                                  }}/>
                </Box>
                <Box sx={{m: 4}}>
                    <OutlinedInput required
                                   type="email"
                                   name="email"
-                                  placeholder="Email: "/>
+                                  placeholder="Email: "
+                                  sx={{
+                                    bgcolor: 'background.default',
+                                    color: 'text.primary'
+                                  }}/>
                </Box>
                 <Box sx={{m: 4}}>
                     <OutlinedInput required
@@ -26,7 +34,9 @@ export default function EmailForm() {
                                    multiline={true}
                                    rows='10'
                                    sx={{ display: 'flex',
-                                        minWidth: 200 }}/>
+                                        minWidth: 200,
+                                        bgcolor: 'background.default',
+                                        color: 'text.primary' }}/>
                 </Box>
                <Button variant="contained"
                        color="secondary"

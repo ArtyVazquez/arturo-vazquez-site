@@ -6,8 +6,12 @@ export default function ProjectSection(props) {
     return (
         <Box sx={{ flexGrow: 1,
                    boxShadow: 10,
-                   p: 2,
-                   borderRadius: '1rem' }}>
+                   p: 1,
+                   mx: '3rem',
+                   my: '3rem',
+                   borderRadius: '1rem',
+                   bgcolor: '#5FA',
+                   color: 'black' }}>
 
             <Box sx={{ display: 'flex',
                 flexDirection: 'row',

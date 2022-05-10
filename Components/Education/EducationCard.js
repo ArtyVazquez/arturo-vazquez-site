@@ -5,10 +5,12 @@ export default function EducationCard(props) {
     return(
         <Box component="div" sx={{
             boxShadow: 10,
-            padding: '1rem',
+            padding: '2.5rem',
             borderRadius: '1rem',
             mx: '3rem',
-            my: '5rem'
+            my: '5rem',
+            bgcolor: '#5FA',
+            color: 'black'
         }}>
             <Box component="h1" sx={{ display: 'inline' }}>
                 {props.uni}

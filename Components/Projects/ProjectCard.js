@@ -33,7 +33,8 @@ export default function ProjectCard(props) {
         <Card sx={{ my: 1,
                     p: 2,
                     borderRadius: '1rem',
-                    shapeRendering: '1rem'}}>
+                    shapeRendering: '1rem'
+                    }}>
             <Image src={`/Images/${props.img}`}
                    alt={`Picture symbol`}
                    width={300}

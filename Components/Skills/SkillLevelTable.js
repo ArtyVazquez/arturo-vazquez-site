@@ -4,7 +4,7 @@ import TerminalIcon from '@mui/icons-material/Terminal';
 
 const StyledRating = styled(Rating)({
     '& .MuiRating-iconFilled': {
-        color: '#D9AFD9'
+        color: '#5FA'
     }});
 
 export default function SkillLevelTable({skillsRow, category}) {

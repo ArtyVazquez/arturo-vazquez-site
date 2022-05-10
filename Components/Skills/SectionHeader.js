@@ -6,7 +6,9 @@ export default function SectionHeader(props) {
             boxShadow: 10,
             borderRadius: '1rem',
             p: 1,
-            textAlign: 'center'
+            textAlign: 'center',
+            bgcolor: '#5FA',
+            color: 'black'
         }}>
             {props.header}
         </Box>

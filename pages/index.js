@@ -30,8 +30,9 @@ export default function Home() {
             </Box>
             <AboutIntroductionCard description="
             I'm Arturo Vazquez,
-            I have recently earned a Bachelor of Science in Computer Science from the University
-            of Illinois Chicago. Throughout my time there I found myself enjoying software
+            I have earned a Bachelor of Science in Computer Science from the University
+            of Illinois Chicago. I've been working as a Developer/Tester for the last 5 months.
+            Throughout my time there I found myself enjoying software
             development as I took many software development technical electives. I really found
             myself enjoying team projects as everyone tends to have different programming backgrounds
             and different ways of solving problems. There was always something that I learned when

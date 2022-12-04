@@ -9,7 +9,7 @@ export default function AboutIntroductionCard(props) {
                    fontSize: '1.6rem',
                    mx: '3rem',
                    my: '5rem',
-                   bgcolor: '#5FA',
+                   bgcolor: '#deeda6',
                    color: 'black'}}>
             {props.description}
         </Box>

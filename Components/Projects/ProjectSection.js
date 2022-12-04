@@ -10,7 +10,7 @@ export default function ProjectSection(props) {
                    mx: '3rem',
                    my: '3rem',
                    borderRadius: '1rem',
-                   bgcolor: '#5FA',
+                   bgcolor: '#deeda6',
                    color: 'black' }}>
 
             <Box sx={{ display: 'flex',

@@ -7,7 +7,7 @@ export default function SectionHeader(props) {
             borderRadius: '1rem',
             p: 1,
             textAlign: 'center',
-            bgcolor: '#5FA',
+            bgcolor: '#deeda6',
             color: 'black'
         }}>
             {props.header}

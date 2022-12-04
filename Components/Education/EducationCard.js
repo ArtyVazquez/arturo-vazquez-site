@@ -9,7 +9,7 @@ export default function EducationCard(props) {
             borderRadius: '1rem',
             mx: '3rem',
             my: '5rem',
-            bgcolor: '#5FA',
+            bgcolor: '#deeda6',
             color: 'black'
         }}>
             <Box component="h1" sx={{ display: 'inline' }}>

@@ -10,7 +10,7 @@ export default function ContactDescription() {
             textAlign: 'center',
             boxShadow: 10,
             m: 5,
-            bgcolor: '#5FA',
+            bgcolor: '#deeda6',
             color: 'black'
         }}>
             <Box component="h1"> Get In Touch </Box>

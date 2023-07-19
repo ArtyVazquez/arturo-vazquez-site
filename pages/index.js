@@ -30,15 +30,10 @@ export default function Home() {
             </Box>
             <AboutIntroductionCard description="
             I'm Arturo Vazquez,
-            I have earned a Bachelor of Science in Computer Science from the University
-            of Illinois Chicago. I've been working as a Developer/Tester for the last 5 months.
-            Throughout my time there I found myself enjoying software
-            development as I took many software development technical electives. I really found
-            myself enjoying team projects as everyone tends to have different programming backgrounds
-            and different ways of solving problems. There was always something that I learned when
-            working in teams that I have applied to future projects. I also really enjoy learning
-            new things, as of now I have really been enjoying learning about full stack web development.
-            "/>
+            I earned a Bachelor of Science in Computer Science from the University
+            of Illinois Chicago in late 2021. I've been working as a Software Developer/QA Analyst for the past year
+            in the healthcare field. I have particularly been exposed to Curam Social Program Management software and have
+            been part of various functional teams."/>
          
           <Footer />
       </Box>

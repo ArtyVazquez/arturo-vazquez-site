@@ -30,7 +30,7 @@ export default function ContactDescription() {
                     objectFit="responsive" />
             </Box>
 
-            <Box component="a" sx={{m: 4,  pt: 10}} href='https://linkedin.com/in/artruo-vazquez-51b926192'>
+            <Box component="a" sx={{m: 4,  pt: 10}} href='https://www.linkedin.com/in/arturo-vazquez-51b926192/'>
                 <Image
                     src='/Images/linkedin.png'
                     alt="Picture terminal symbol"

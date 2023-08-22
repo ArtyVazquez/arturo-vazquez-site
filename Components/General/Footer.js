@@ -9,7 +9,7 @@ export default function Footer() {
     justifyContent: 'center',
     alignItems: 'center'
     }} component="p">
-    © 2022 Arturo Vazquez.
+    © 2023 Arturo Vazquez.
     </Box>
   )
 }

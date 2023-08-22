@@ -15,7 +15,7 @@ function ThemeMode() {
   const theme = useTheme();
   const colorMode = useContext(ColorModeContext);
   return (      
-      <ListItemIcon  onClick={() => colorMode.toggleColorMode(true)} color="inherit">
+      <ListItemIcon  onClick={() => colorMode.toggleColorMode(false)} color="inherit">
         {theme.palette.mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
       </ListItemIcon>
   );

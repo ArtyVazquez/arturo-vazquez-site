@@ -31,7 +31,7 @@ export default function Home() {
             <AboutIntroductionCard description="
             I'm Arturo Vazquez,
             I earned a Bachelor of Science in Computer Science from the University
-            of Illinois Chicago in late 2021. I've been working as a Software Developer/QA Analyst for the past year
+            of Illinois Chicago in late 2021. I've been working as a Software Developer for the past few years
             in the healthcare field. I have particularly been exposed to Curam Social Program Management software and have
             been part of various functional teams."/>
          

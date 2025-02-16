@@ -15,7 +15,7 @@ export default function Education() {
             uni='University of Illinois at Chicago, (Aug 2019-Dec 2021)'
             imgSrc='/Images/uic.png'
             major='Bachelor of Science in Computer Science'
-            eduHighlights={["GPA: 3.92", "Honors: Summa Cum Laude", "TheDream.US National Scholarship"]}
+            eduHighlights={["GPA: 3.92", "Honors: Summa Cum Laude"]}
         />
         <Box sx={{
             textAlign: 'center',
